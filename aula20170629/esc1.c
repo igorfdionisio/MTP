@@ -18,6 +18,7 @@ int main(){
     printf("****************************************\n\n");
     fprintf(arquivo,"%s", texto);
     fprintf(stdout, "%s", texto);
+    free(texto);
     fclose(arquivo);
     return 0;
 }
