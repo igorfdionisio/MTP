@@ -59,5 +59,8 @@ main (){
         C=centroide (vetPoligono[i]);
         printf ("As coordenadas x e y do centroide do #%d poligono sao (%lf,%lf)\n", i, C.x, C.y);
     }
+    for (i=0; i<numPoligonos; i++){
+        free(vetPoligono[i].vertices);
+    }
+    free(vetPoligono);
 }
-
